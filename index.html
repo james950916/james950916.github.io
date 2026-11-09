@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Personal Page</title>
+    <!-- 引入 jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body { font-family: 'Times New Roman', "標楷體", sans-serif; text-align: center; padding: 50px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        #message { margin-top: 20px; color: #0366d6; font-size: 18px; display: none; }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My GitHub Page</h1>
+    <p>這是一個包含 jQuery 功能的個人網頁。</p>
+    
+    <button id="actionBtn">點擊測試 jQuery 功能</button>
+    <p id="message">🎉 jQuery 運作成功！網頁已經順利部署。</p>
+
+    <script>
+        // 確認文件載入完成後執行 jQuery
+        $(document).ready(function() {
+            $("#actionBtn").click(function() {
+                // 使用 jQuery 的 fadeToggle 呈現淡入/淡出動畫效果
+                $("#message").fadeToggle();
+            });
+        });
+    </script>
+
+</body>
+</html>
